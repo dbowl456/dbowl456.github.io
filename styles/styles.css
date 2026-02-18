@@ -1,0 +1,15 @@
+/* https://coolors.co/312f2f-84dccf-a6d9f7-bccce0-bf98a0 */
+
+.topnav a {
+    text-decoration: none;
+    color: orange;
+}
+
+.topnav a:hover {
+    content: "";
+    color: black;
+}
+
+.topnav a.active {
+    color: black;
+}
