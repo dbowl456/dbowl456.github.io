@@ -2,14 +2,20 @@
 
 .topnav a {
     text-decoration: none;
-    color: orange;
+    color: gray;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .topnav a:hover {
     content: "";
-    color: black;
+    color: white;
 }
 
 .topnav a.active {
-    color: black;
+    color: white;
+}
+
+.topnav {
+    background-color: black;
 }
