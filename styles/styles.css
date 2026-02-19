@@ -1,14 +1,16 @@
 /* https://coolors.co/312f2f-84dccf-a6d9f7-bccce0-bf98a0 */
+/* https://coolors.co/ffffff-00a7e1-00171f-003459-007ea7 */
+/* https://coolors.co/000000-291528-3a3e3b-f0eff4-9e829c */
+/* https://coolors.co/f3e8ee-bacdb0-729b79-475b63-2e2c2f */
 
 .topnav a {
     text-decoration: none;
     color: gray;
-    padding: 10px;
-    font-size: 30px;
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 .topnav a:hover {
-    content: "";
     color: white;
 }
 
@@ -18,4 +20,24 @@
 
 .topnav {
     background-color: black;
+    padding: .7rem;
+}
+
+body {
+    margin: 0;
+}
+
+.profile-image {
+    width: 45rem;
+    height: 30rem;
+    border-radius: 10rem;
+}
+
+.social-nav a {
+    font-size: 2.5rem;
+}
+
+.social-nav a:link,
+.social-nav a:visited {
+    color: black;
 }
