@@ -1,0 +1,21 @@
+{
+  "name": "dbowl456.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "source": [
+    "src/**/*.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url /"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.30.1",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.16.4",
+    "@parcel/transformer-webmanifest": "2.16.4",
+    "parcel": "^2.16.4"
+  }
+}
