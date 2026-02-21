@@ -34,10 +34,20 @@ body {
 }
 
 .social-nav a {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .social-nav a:link,
 .social-nav a:visited {
     color: black;
+}
+
+.social-wrapper {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
 }
