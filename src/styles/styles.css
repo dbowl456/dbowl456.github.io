@@ -7,8 +7,8 @@
     /* making top nav smaller, it's way too big right now */
     text-decoration: none;
     color: gray;
-    padding: 1rem;
-    font-size: 2rem;
+    padding: .75rem;
+    font-size: 1.25rem;
 }
 
 .topnav a:hover {
@@ -26,6 +26,20 @@
 
 body {
     margin: 0;
+}
+
+/* I don't like this, I want it to stay this same through a window size change, but idk if that gets really in-depth into mobile support or not */
+.about-items {
+    padding-left: 30rem;
+    padding-right: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    padding-left: 10rem;
+    padding-right: 5rem;
 }
 
 .profile-image {
