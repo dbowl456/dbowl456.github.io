@@ -28,20 +28,6 @@ body {
     margin: 0;
 }
 
-/* I don't like this, I want it to stay this same through a window size change, but idk if that gets really in-depth into mobile support or not */
-.about-items {
-    padding-left: 30rem;
-    padding-right: 45rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about-text {
-    padding-left: 10rem;
-    padding-right: 5rem;
-}
-
 .profile-image {
     width: 30rem;
     height: 20rem;
