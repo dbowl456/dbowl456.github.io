@@ -17,5 +17,9 @@
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
     "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
   }
 }

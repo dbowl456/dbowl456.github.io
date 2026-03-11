@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@popperjs/core':
+        specifier: ^2.11.8
+        version: 2.11.8
+      bootstrap:
+        specifier: ^5.3.8
+        version: 5.3.8(@popperjs/core@2.11.8)
     devDependencies:
       '@parcel/packager-raw-url':
         specifier: 2.16.4
@@ -480,6 +487,9 @@ packages:
     peerDependencies:
       '@parcel/core': ^2.16.4
 
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
   '@swc/core-darwin-arm64@1.15.11':
     resolution: {integrity: sha512-QoIupRWVH8AF1TgxYyeA5nS18dtqMuxNwchjBIwJo3RdwLEFiJq6onOx9JAxHtuPwUkIVuU2Xbp+jCJ7Vzmgtg==}
     engines: {node: '>=10'}
@@ -573,6 +583,11 @@ packages:
     resolution: {integrity: sha512-lIyg0szRfYbiy67j9KN8IyeD7q7hcmqnJ1ddWmNt19ItGpNN64mnllmxUNFIOdOm6by97jlL6wfpTTJrmnjWAA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+
+  bootstrap@5.3.8:
+    resolution: {integrity: sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
 
   browserslist@4.28.1:
     resolution: {integrity: sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==}
@@ -1536,6 +1551,8 @@ snapshots:
     transitivePeerDependencies:
       - napi-wasm
 
+  '@popperjs/core@2.11.8': {}
+
   '@swc/core-darwin-arm64@1.15.11':
     optional: true
 
@@ -1602,6 +1619,10 @@ snapshots:
       safe-buffer: 5.2.1
 
   baseline-browser-mapping@2.10.0: {}
+
+  bootstrap@5.3.8(@popperjs/core@2.11.8):
+    dependencies:
+      '@popperjs/core': 2.11.8
 
   browserslist@4.28.1:
     dependencies:
