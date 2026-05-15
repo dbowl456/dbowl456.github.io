@@ -4,6 +4,15 @@
 /* https://coolors.co/000000-291528-3a3e3b-f0eff4-9e829c */
 /* https://coolors.co/f3e8ee-bacdb0-729b79-475b63-2e2c2f */
 
+:root {
+    /* In Progress */
+    --orange: #d3550d;
+    --beige: #ECE2D2;
+    --white: #F7F7F7;
+    --dark-grey: #41423A;
+    --black: #141414;
+}
+
 .topnav a {
     /* making top nav smaller, it's way too big right now */
     text-decoration: none;
@@ -23,16 +32,25 @@
 .topnav {
     background-color: black;
     padding: .7rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background-color: white;
 }
 
 .profile-image {
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
     border-radius: 3rem;
+}
+
+.col-md-4 {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 .social-nav a {
@@ -42,11 +60,6 @@ body {
 .social-nav a:link,
 .social-nav a:visited {
     color: black;
-}
-
-.social-wrapper {
-    padding-left: 20rem;
-    padding-right: 20rem;
 }
 
 .social-container {
