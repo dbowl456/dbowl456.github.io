@@ -17,7 +17,7 @@
 .topnav a {
     /* making top nav smaller, it's way too big right now */
     text-decoration: none;
-    color: #d4f0fc;
+    color: var(--sky-blue);
     padding: .5rem;
     font-size: 1.25rem;
 }
@@ -65,8 +65,8 @@ body {
     justify-content: space-between;
 }
 
-.container {
-    padding-top: 2.5%;
+#about {
+    padding-top: 5%;
 }
 
 .about-heading {
