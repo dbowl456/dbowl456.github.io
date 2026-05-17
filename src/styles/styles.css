@@ -1,23 +1,24 @@
 @import "~/node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 /* https://coolors.co/312f2f-84dccf-a6d9f7-bccce0-bf98a0 */
 /* https://coolors.co/ffffff-00a7e1-00171f-003459-007ea7 */
 /* https://coolors.co/000000-291528-3a3e3b-f0eff4-9e829c */
 /* https://coolors.co/f3e8ee-bacdb0-729b79-475b63-2e2c2f */
 
 :root {
-    /* In Progress */
-    --orange: #d3550d;
-    --beige: #ECE2D2;
-    --white: #F7F7F7;
-    --dark-grey: #41423A;
-    --black: #141414;
+    --sky-blue: #d4f0fc;
+    --light-blue: #89d6fb;
+    --electric-blue: #02a9f7;
+    --dark-blue: #02577a;
+    --black: #01303f;
+    --cream: #FEFBEA;
 }
 
 .topnav a {
     /* making top nav smaller, it's way too big right now */
     text-decoration: none;
-    color: gray;
-    padding: .75rem;
+    color: #d4f0fc;
+    padding: .5rem;
     font-size: 1.25rem;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .topnav {
-    background-color: black;
+    background-color: #02577a;
     padding: .7rem;
     width: 100%;
     box-sizing: border-box;
@@ -38,19 +39,15 @@
 
 body {
     margin: 0;
-    background-color: white;
+    background-color: #141414;
+    font-family: 'Rubik', sans-serif;
 }
 
 .profile-image {
     width: 100%;
-    max-width: 30rem;
+    max-width: 22rem;
     height: auto;
     border-radius: 3rem;
-}
-
-.col-md-4 {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
 }
 
 .social-nav a {
@@ -66,4 +63,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.container {
+    padding-top: 2.5%;
+}
+
+.about-heading {
+    color: var(--cream);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 65ch;
+    color: var(--cream);
+}
+
+.copyright {
+    color: white;
+}
+
+i {
+    color: white;
+}
+
+hr {
+    color: white;
 }
