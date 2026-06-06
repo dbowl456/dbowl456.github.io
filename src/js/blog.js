@@ -1,7 +1,9 @@
 const datePicker = document.getElementById("blog-date");
 
-datePicker.addEventListener("change", (e) => {
-    const date = e.target.value;
+const today = new Date().toISOString().split('T')[0];
+datePicker.value = today;
+
+function loadBlogPost(date) {
     const blogBottom = document.querySelector(".blog-bottom");
     blogBottom.innerHTML = "";
 
@@ -21,4 +23,7 @@ datePicker.addEventListener("change", (e) => {
     } else {
         blogBottom.innerHTML = "<p class=blog-text>No blog post found for that date.</p>"
     }
-});
+}
+
+datePicker.addEventListener("change", (e) => loadBlogPost(e.target.value));
+loadBlogPost(today);
