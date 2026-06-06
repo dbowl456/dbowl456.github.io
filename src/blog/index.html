@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setup | dbowl456</title>
+    <title>Blog | dbowl456</title>
     <link rel="icon" type="image/png" href="/src/images/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/src/images/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/src/images/favicon/favicon.ico" />
@@ -19,12 +19,24 @@
     <section class="topnav">
         <a href="../index.html">Home</a>
         <a href="../portfolio/index.html">Portfolio</a>
-        <a class="active" href="index.html">Setup</a>
-        <a href="../blog/index.html">Blog</a>
+        <a href="../setup/index.html">Setup</a>
+        <a class="active" href="index.html">Blog</a>
     </section>
 
     <main>
-        <h1 class="heading">Setup</h1>
+        <div class="blog-top">
+            <h1 class="heading">Dalton's Blog</h1>
+            <p class="text"> Welcome to my blog! I don't know how consistent this is going to be, but I just wanted an
+                outlet to talk about random stuff or achievements. </p>
+            <div class="date-picker">
+                <label class=text for="blog-date">Select a date:</label>
+                <input type="date" id="blog-date" name="blog-date">
+            </div>
+        </div>
+        <div class="blog-bottom">
+            <h2 class="blog-heading"></h2>
+            <p class="blog-text"></p>
+        </div>
     </main>
 
     <footer>
@@ -41,6 +53,9 @@
             </div>
         </section>
     </footer>
+
+    <script src="../js/blogs.js"></script>
+    <script src="../js/blog.js"></script>
 </body>
 
 </html>

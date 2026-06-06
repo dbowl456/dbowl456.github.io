@@ -65,11 +65,13 @@ body {
     padding-top: 5%;
 }
 
-.about-heading {
+.heading,
+.blog-heading {
     color: var(--cream);
 }
 
-.about-text {
+.text,
+.blog-text {
     font-size: 1.1rem;
     line-height: 1.8;
     max-width: 65ch;
