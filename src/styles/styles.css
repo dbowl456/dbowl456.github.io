@@ -97,8 +97,10 @@ body {
 }
 
 .blog-bottom {
+    display: flex;
     padding-top: 5%;
     padding-bottom: 1%;
+    justify-content: center;
 }
 
 .text {
