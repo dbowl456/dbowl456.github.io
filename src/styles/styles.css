@@ -27,7 +27,7 @@
 }
 
 .topnav {
-    background-color: #02577a;
+    background-color: var(--dark-blue);
     padding: .7rem;
     width: 100%;
     box-sizing: border-box;
@@ -65,13 +65,42 @@ body {
     padding-top: 5%;
 }
 
-.heading,
-.blog-heading {
+.heading {
     color: var(--cream);
 }
 
-.text,
+.blog-heading {
+    color: white;
+}
+
 .blog-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 65ch;
+    color: white;
+}
+
+#blog {
+    text-align: center;
+    background: var(--dark-blue);
+    border-radius: 2rem;
+    margin-top: 5%;
+}
+
+.blog-top {
+    padding-top: 2%;
+}
+
+.date-picker {
+    padding-top: 1%;
+}
+
+.blog-bottom {
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.text {
     font-size: 1.1rem;
     line-height: 1.8;
     max-width: 65ch;
@@ -80,6 +109,7 @@ body {
 
 .copyright {
     color: white;
+    margin-bottom: 0;
 }
 
 i {
