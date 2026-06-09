@@ -23,7 +23,7 @@ function loadBlogPost(date) {
         blogBottom.appendChild(title);
         blogBottom.appendChild(text);
     } else {
-        blogBottom.innerHTML = "<p class=blog-text>No blog post found for that date.</p>"
+        blogBottom.innerHTML = "<span class=blog-text>No blog post found for that date.</span>"
     }
 }
 
