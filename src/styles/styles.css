@@ -64,7 +64,7 @@ body {
 }
 
 #about {
-    padding-top: 5%;
+    padding-top: 3.5em;
 }
 
 .heading {
@@ -85,24 +85,24 @@ body {
 #blog {
     text-align: center;
     border-radius: 1.5rem;
-    margin-top: 2.5%;
-    margin-bottom: 2%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 .blog-top {
-    padding-top: 2%;
+    padding-top: .75em;
 }
 
 .date-picker {
-    padding-top: 1%;
+    padding-top: .4em;
 }
 
 .blog-bottom {
     display: flex;
     background: var(--dark-blue);
     flex-direction: column;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: left;
     align-items: center;
     border-radius: 1.5rem;
