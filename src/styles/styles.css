@@ -64,6 +64,12 @@ body {
     padding-top: 3.5em;
 }
 
+.aboutme {
+    background-color: var(--dark-blue);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
 .heading {
     color: var(--cream);
 }
@@ -115,13 +121,19 @@ body {
     color: var(--cream);
 }
 
+
+#portfolio {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .portfolio-image {
-    max-width: 22rem;
+    width: 100%;
+    max-width: 30rem;
     height: auto;
-    width: 15rem;
-    height: 15rem;
     border-radius: 50%;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 .top-row {
@@ -134,6 +146,7 @@ body {
 
 .portfolio-info {
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
 .resume-btn {
