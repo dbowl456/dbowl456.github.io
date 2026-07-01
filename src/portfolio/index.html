@@ -26,28 +26,35 @@
     <main>
         <section id="portfolio" class="container">
             <div class="portfolio-layout">
-                <div class="row top-row">
+                <!-- Fix margin and padding, figure out the multiple cards in a row -->
+                <div class="row port-card">
                     <div class="col-12 col-md-4 text-center">
                         <img class="portfolio-image" src="../images/portfolio_image.jpg"
                             alt="picture of Dalton eating a s'more">
                     </div>
-                    <div class="col-12 col-md-8 portfolio-info">
-                        <h1 class="heading">Dalton Bowling</h1>
-                        <span class="text">Aspiring Software Engineer and Game Developer</span>
-                        <a href="resume.pdf" class="btn resume-btn">
-                            Download Resume
-                        </a>
+                    <!-- Figure out Name and Button spacing -->
+                    <div class="col-12 col-md-8 mt-1">
+                        <div class="d-flex justify-content-between">
+                            <h1 class="port-heading">Dalton Bowling</h1>
+                            <a href="resume.pdf" class="btn resume-btn">
+                                Download Resume
+                            </a>
+                        </div>
+                        <p class="text mb-1">Aspiring Software Engineer and Game Developer</p>
+                        <p class="text mb-1">Location: Shenandoah, Virginia</p>
+                        <p class="text mb-1">Github: <a href="https://github.com/dbowl456"
+                                class="link">https://github.com/dbowl456</a></p>
+                        <p class="text mb-1">Linkedin: <a href="https://www.linkedin.com/in/dalton-bowling/"
+                                class="link">https://www.linkedin.com/in/dalton-bowling/</a>
+                        </p>
                     </div>
                 </div>
-                <div class="bottom-row">
-                    <div class="left-box">
+                <div class="row mt-3">
+                    <div class="col-md-6 port-card">
 
                     </div>
-                    <div class="right-box">
-
+                    <div class="col-md-6 port-card">
                     </div>
-                </div>
-            </div>
         </section>
     </main>
 

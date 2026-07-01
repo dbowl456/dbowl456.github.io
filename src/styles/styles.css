@@ -74,6 +74,11 @@ body {
     color: var(--cream);
 }
 
+.port-heading {
+    color: var(--cream);
+    margin: 0;
+}
+
 .blog-heading {
     color: white;
 }
@@ -136,7 +141,7 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-.top-row {
+.port-card {
     background: var(--dark-blue);
     border-radius: 1.5rem;
     padding-top: 1em;
@@ -144,14 +149,10 @@ body {
     margin-top: 1em;
 }
 
-.portfolio-info {
-    padding-left: 2rem;
-    margin-top: 1rem;
-}
-
 .resume-btn {
     background-color: var(--cream);
     color: var(--black);
+    align-self: center;
 }
 
 .resume-btn:hover {
@@ -165,9 +166,26 @@ body {
     border-color: #e2dfd0;
 }
 
+.link {
+    text-decoration: none;
+    color: var(--light-blue);
+    word-break: break-all;
+}
+
 .copyright {
     color: white;
     margin-bottom: 0;
+}
+
+.blog-image {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 1em;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 i {
