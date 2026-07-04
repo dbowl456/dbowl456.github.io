@@ -8,6 +8,7 @@
     --dark-blue: #02577a;
     --black: #01303f;
     --cream: #FEFBEA;
+    --dark-cream: #f8f5e7;
 }
 
 .topnav a {
@@ -126,6 +127,12 @@ body {
     color: var(--cream);
 }
 
+.subtext {
+    line-height: 1.8;
+    max-width: 65ch;
+    color: var(--dark-cream)
+}
+
 
 #portfolio {
     padding-left: 1rem;
@@ -143,9 +150,8 @@ body {
 
 .port-card {
     background: var(--dark-blue);
-    border-radius: 1.5rem;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    border-radius: 1.0em;
+    padding: 1em 1rem;
     margin-top: 1em;
 }
 
@@ -186,6 +192,10 @@ body {
     aspect-ratio: 1 / 1;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.info-block {
+    border-left: 3px solid var(--light-blue);
 }
 
 i {
