@@ -75,11 +75,6 @@ body {
     color: var(--cream);
 }
 
-.port-heading {
-    color: var(--cream);
-    margin: 0;
-}
-
 .blog-heading {
     color: white;
 }
@@ -92,14 +87,9 @@ body {
 }
 
 #blog {
-    text-align: center;
     border-radius: 1.5rem;
     margin-top: 1.5em;
     margin-bottom: 1em;
-}
-
-.blog-top {
-    padding-top: .75em;
 }
 
 .date-picker {
@@ -148,7 +138,7 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-.port-card {
+.card {
     background: var(--dark-blue);
     border-radius: 1.0em;
     padding: 1em 1rem;
@@ -192,6 +182,14 @@ body {
     aspect-ratio: 1 / 1;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.blog-card-link {
+    display: block;
+}
+
+.blog-card-link:hover .card {
+    border: 1px solid white;
 }
 
 .info-block {

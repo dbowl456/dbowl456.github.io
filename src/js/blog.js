@@ -1,39 +1,54 @@
 import { blogs } from "./blogs.js";
 
-const datePicker = document.getElementById("blog-date");
+function loadBlogPage() {
+    const blogArea = document.querySelector("#blog-area");
 
-const now = new Date()
-const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`
-datePicker.value = today;
+    const sortedEntries = Object.entries(blogs).sort(
+        ([dateA], [dateB]) => new Date(dateB) - new Date(dateA)
+    );
 
-function loadBlogPost(date) {
-    const blogBottom = document.querySelector(".blog-bottom");
-    blogBottom.innerHTML = "";
-
-    const post = blogs[date];
-
-    if (post) {
-        const title = document.createElement("h2");
-        title.textContent = post.title;
-        title.className = "blog-heading";
-        blogBottom.appendChild(title);
-
-        if (post.image) {
-            const img = document.createElement("img");
-            img.src = post.image;
-            img.alt = post.imageAlt;
-            img.className = "blog-image";
-            blogBottom.appendChild(img);
-        }
-
-        const text = document.createElement("p");
-        text.textContent = post.body;
-        text.className = "blog-text";
-        blogBottom.appendChild(text);
-    } else {
-        blogBottom.innerHTML = "<span class=blog-text>No blog post found for that date.</span>"
+    for (const [date, blog] of sortedEntries) {
+        blogArea.appendChild(createBlogCard(date, blog));
     }
 }
 
-datePicker.addEventListener("change", (e) => loadBlogPost(e.target.value));
-loadBlogPost(today);
+function createBlogCard(date, blog) {
+    const link = document.createElement("a");
+    link.href = `/blog/${blog.link}`;
+    console.log(link.href);
+    link.classList.add("text-decoration-none", "blog-card-link");
+
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    const title = document.createElement("h2");
+    title.textContent = blog.title;
+    title.classList.add("heading", "mb-1");
+    card.appendChild(title);
+
+    const description = document.createElement("p");
+    description.textContent = blog.description;
+    description.classList.add("text", "m-0");
+    card.appendChild(description);
+
+    const dateEl = document.createElement("p");
+    dateEl.textContent = formatDate(date);
+    dateEl.classList.add("subtext", "m-0");
+    card.appendChild(dateEl);
+
+    link.appendChild(card);
+    return link;
+}
+
+function formatDate(dateString) {
+    const [year, month, day] = dateString.split("-").map(Number);
+    const date = new Date(year, month - 1, day);
+
+    return date.toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+    });
+}
+
+loadBlogPage();
