@@ -52,7 +52,6 @@ function formatDate(dateString) {
 
 function loadBlogPost() {
     const blogpost = document.querySelector("#blog-post");
-    console.log(blogpost);
 
     const name = getBlogFolderName();
 
