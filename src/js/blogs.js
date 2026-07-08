@@ -9,7 +9,7 @@ export const blogs = {
     },
     "2026-06-08": {
         title: "Getting Back Into Fortnite",
-        link: "fortnite-again",
+        link: "fortnite_again",
         description: "Fortnite is kind of fun again...",
         body: "I know this is super random, but my friends and I have been getting back into Fortnite. I played it basically since it came out. I started playing in Chapter 1 Season 3, when my brother gave me a playstation when he moved to pc gaming. However, I stopped playing when I got to college because college is BUSY! I basically have no time to do stuff while I'm in college, but now that I'm back at home I just started playing and it's been a lot of fun. I've been playing with some friends and that's been a blast too. I know this is a random post, but this will continue to just be an outlet where I can ramble on about random stuff. Thanks for reading :) "
     },

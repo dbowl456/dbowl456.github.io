@@ -15,7 +15,6 @@ function loadBlogPage() {
 function createBlogCard(date, blog) {
     const link = document.createElement("a");
     link.href = `/blog/${blog.link}`;
-    console.log(link.href);
     link.classList.add("text-decoration-none", "blog-card-link");
 
     const card = document.createElement("div");
@@ -49,6 +48,44 @@ function formatDate(dateString) {
         day: "numeric",
         year: "numeric",
     });
+}
+
+function loadBlogPost() {
+    const blogpost = document.querySelector("#blog-post");
+    console.log(blogpost);
+
+    const name = getBlogFolderName();
+
+    for (blog of Object.entries(blogs)) {
+        if (blog.link == name) {
+            const title = document.createElement("h1");
+            title.textContent = blog.title;
+            title.classList.add("blog-heading", "pt-1", "text-center");
+            blogpost.appendChild(title);
+
+            if (blog.image) {
+                const img = document.createElement("img");
+                img.src = blog.image;
+                img.alt = blog.imageAlt;
+                img.className = "blog-image";
+                blogpost.appendChild(img);
+            }
+
+            const text = document.createElement("p");
+            text.textContent = blog.body;
+            text.className = "blog-text";
+            blogpost.appendChild(text);
+        }
+    }
+}
+
+function getBlogFolderName() {
+    const segments = window.location.pathname.split("/").filter((s) => s);
+    const last = segments[segments.length - 1];
+    if (last === "index.html") {
+        last.pop();
+    }
+    return last.pop();
 }
 
 loadBlogPage();
