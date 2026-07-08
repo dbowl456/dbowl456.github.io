@@ -61,10 +61,6 @@ body {
     justify-content: space-between;
 }
 
-#about {
-    padding-top: 3.5em;
-}
-
 .aboutme {
     background-color: var(--dark-blue);
     border-radius: 1.5rem;
@@ -84,12 +80,6 @@ body {
     line-height: 1.8;
     max-width: 65ch;
     color: white;
-}
-
-#blog {
-    border-radius: 1.5rem;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
 }
 
 .date-picker {
