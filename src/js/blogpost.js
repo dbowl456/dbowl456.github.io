@@ -2,8 +2,6 @@ import { blogs } from "./blogs.js";
 
 function loadBlogPost() {
     const blogpost = document.querySelector(".blog-container");
-    console.log(blogpost);
-
     const name = getBlogFolderName();
 
     for (const [date, blogData] of Object.entries(blogs)) {
