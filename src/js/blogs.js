@@ -23,7 +23,7 @@ export const blogs = {
         title: "Modding My GBA",
         link: "GBA_mod",
         description: "Remember the GBA I got? I gave it a little upgrade...",
-        body: "Testing",
+        body: "Shortly after I bought the GBA, I started thinking about what I could do with this little thing, because there was no way I was keeping it as-is. I did some research and found out you can swap in a new LCD screen and a new shell, so I watched some videos on YouTube, found a color I liked, and ordered a non-solder kit. It took a while to get here, but when it did, I was SOOOO excited. I was hanging out with friends that day, but before everyone got together I went ahead and swapped out the case and put in the new screen, and the upgrade makes the GBA feel insane. Before doing the upgrade, I bought Super Mario Land 2: 6 Golden Coins just to make sure the GBA worked, but I replayed it after replacing the screen so I could actually see what I was doing! My friend Ilya (the goat) also lent me a copy of Pokémon Mystery Dungeon: Red Rescue Team, so I've been playing that off and on. The new screen also has two touchpads that let you adjust the brightness or cycle the screen color, though why I'd want to do that, no idea, but it's an option. Thanks for reading :)",
         image: gbaImg,
         imageAlt: "A Modded GameBoy Advance"
     },

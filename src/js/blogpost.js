@@ -10,7 +10,7 @@ function loadBlogPost() {
         if (blogData.link == name) {
             const title = document.createElement("h1");
             title.textContent = blogData.title;
-            title.classList.add("blog-heading", "pt-1", "text-center");
+            title.classList.add("blog-heading", "pt-3", "text-center");
             blogpost.appendChild(title);
 
             if (blogData.image) {
