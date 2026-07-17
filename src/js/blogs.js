@@ -1,4 +1,5 @@
 const gbaImg = new URL("../images/blog_images/gba.jpg", import.meta.url).href;
+const cardsImg = new URL("../images/blog_images/cards.jpg", import.meta.url).href;
 
 export const blogs = {
     "2026-06-06": {
@@ -27,4 +28,12 @@ export const blogs = {
         image: gbaImg,
         imageAlt: "A Modded GameBoy Advance"
     },
+    "2026-07-16": {
+        title: "Magic and Pokémon",
+        link: "magic_and_pokemon",
+        description: "Just like Fortnite all over again",
+        body: "So my hobbies have definitely been going all over lately, but I love it! One day I was at my girlfriend's house; her brother (the GOAT) asked me if I wanted to play a game of Magic: The Gathering, and I said sure. I've been wanting to learn how to play, but the opportunity never came up, but this was the night that changed. He has about eight commander decks, so I wasn't sure what to choose, but I went ahead and chose the Mothman precon. That match was certainly something. I won, but I cheated and didn't realize it until the day after, but that game lasted two hours....TWO HOURS. So, as smart people would do, we played two more matches! We started playing at 9 pm, and we finished our last game at 2 am. During one of the games, we decided we wanted to go to an LCS (shoutout LifeLink Games) and go look and maybe buy some cards. So we get to the store, and I ended up buying the Avengers Assemble precon, sleeves, and a binder for a master set for Pokémon. While I was checking out the precons, a guy came up to me and asked if Jackson and I wanted to play, and we were like, sure. So we played a three-way commander game that lasted for two hours, so we were there for a little bit longer than I thought, but I had so much fun. The next week, I went to work at a summer camp, and during the camp, while I had downtime, I started to play Pokémon! Now I've played Pokémon before, but it's been off and on. I've had a lot of fun playing, though, and it was super refreshing. So now I'm building decks for Pokémon, upgrading my precon, and looking for new precons that I might want to get! Thanks for reading :)",
+        image: cardsImg,
+        imageAlt: "Two cards, captain america, team leader from magic the gathering and mega lucario ex from pokemon"
+    }
 };
