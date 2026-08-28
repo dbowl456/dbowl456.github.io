@@ -1,6 +1,7 @@
 const gbaImg = new URL("../images/blog_images/gba.jpg", import.meta.url).href;
 const cardsImg = new URL("../images/blog_images/cards.jpg", import.meta.url).href;
 const dccImg = new URL("../images/blog_images/dcc.jpg", import.meta.url).href;
+const nesImg = new URL("../images/blog_images/nes.jpg", import.meta.url).href;
 
 export const blogs = {
     "2026-06-06": {
@@ -50,5 +51,13 @@ export const blogs = {
         body: "I'm going to start this out by saying before I read Dungeon Crawler Carl, I didn't read books, nor did I even like reading books. While I was at Nags Head, I decided that when I was on the beach, I wasn't going to be on my phone. On the second day of being at the beach (the first day was just unpacking), we went to the Local Target, and I was searching around for Dungeon Crawler Carl. Jackson suggested it to me. He isn't a big reader, but it's one of his favorite books, so I decided to go ahead and get it. I was very hesitant to start the book, but once I did, I couldn't put it down. Of course, I put it down when we went to eat or do other stuff, but I brought it with me to stores in case I got bored. If you don't know what Dungeon Crawler Carl is, the main character, Carl (duh), and his ex's cat, Princess Donut, have to fight their way through a dungeon to survive. How did this dungeon appear, you might ask? Earth was harvested of all it's resources, which killed anybody that was inside of buildings or such, to build this dungeon. It features goblins to drug-dealing llamas, it really is an adventure. The book was so good I got the second one. I'm determined to read the rest of the series, other Matt Dinniman stories, and maybe even other books entirely! I haven't been this excited about reading in a LONG time. Thanks for reading :)",
         image: dccImg,
         imageAlt: "Dungeon Crawler Carl and Carl's Doomsday Scenario book covers"
+    },
+    "2026-08-27": {
+        title: "NES Restoration",
+        link: "nes_restoration",
+        description: "Found an old NES and restored it!",
+        body: "TBA",
+        image: nesImg,
+        imageAlt: "Picture of NES working with a monitor"
     }
 };
