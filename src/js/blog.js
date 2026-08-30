@@ -1,15 +1,63 @@
 import { blogs } from "./blogs.js";
 
-function loadBlogPage() {
-    const blogArea = document.querySelector("#blog-area");
+const POSTS_PER_PAGE = 5;
+let currentPage = 0;
+let sortedEntries = []
 
-    const sortedEntries = Object.entries(blogs).sort(
+function loadBlogPage() {
+    sortedEntries = Object.entries(blogs).sort(
         ([dateA], [dateB]) => new Date(dateB) - new Date(dateA)
     );
 
-    for (const [date, blog] of sortedEntries) {
+    renderPage(currentPage);
+}
+
+function renderPage(page) {
+    const blogArea = document.querySelector("#blog-area");
+    blogArea.innerHTML = "";
+
+    const start = page * POSTS_PER_PAGE;
+    const end = start + POSTS_PER_PAGE;
+    const pageEntries = sortedEntries.slice(start, end);
+
+    for (const [date, blog] of pageEntries) {
         blogArea.appendChild(createBlogCard(date, blog));
     }
+
+    renderPagination(page);
+}
+
+function renderPagination(page) {
+    const pagination = document.querySelector("#blog-pagination");
+    pagination.innerHTML = "";
+
+    const totalPages = Math.ceil(sortedEntries.length / POSTS_PER_PAGE);
+
+    const prevBtn = document.createElement("button");
+    prevBtn.textContent = "<";
+    prevBtn.classList.add("pagination-arrow");
+    prevBtn.disabled = page === 0;
+    prevBtn.addEventListener("click", () => {
+        currentPage--;
+        renderPage(currentPage);
+    });
+
+    const pageLabel = document.createElement("span");
+    pageLabel.classList.add("pagination-arrow", "text");
+    pageLabel.textContent = `${page + 1} / ${totalPages}`;
+
+    const nextBtn = document.createElement("button");
+    nextBtn.textContent = ">";
+    nextBtn.classList.add("pagination-arrow");
+    nextBtn.disabled = page >= totalPages - 1;
+    nextBtn.addEventListener("click", () => {
+        currentPage++;
+        renderPage(currentPage);
+    });
+
+    pagination.appendChild(prevBtn);
+    pagination.appendChild(pageLabel);
+    pagination.appendChild(nextBtn);
 }
 
 function createBlogCard(date, blog) {
@@ -80,11 +128,12 @@ function loadBlogPost() {
 
 function getBlogFolderName() {
     const segments = window.location.pathname.split("/").filter((s) => s);
-    const last = segments[segments.length - 1];
+    let last = segments[segments.length - 1];
     if (last === "index.html") {
-        last.pop();
+        segments.pop();
+        last = segments[segments.length - 1];
     }
-    return last.pop();
+    return last;
 }
 
 loadBlogPage();
