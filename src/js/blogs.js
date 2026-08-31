@@ -56,7 +56,7 @@ export const blogs = {
         title: "NES Restoration",
         link: "nes_restoration",
         description: "Found an old NES and restored it!",
-        body: "TBA",
+        body: "So, my brother recently acquired my grandmother's house, and let me tell you, THIS THING WAS TRASHED. But as my family was rummaging through everything, they found an old NES. We weren't sure if it worked, so we put it aside until we could clean it. A few days later, my mom and I sat down to clean the thing, and it was disgusting. There was mouse poop in the ventilation, along with dirt and hair inside the console. After getting it cleaned up, we realized we only had the console and one game, so my dad went out and bought a controller and power adapter. Once my dad got home, we turned it on, and it kind of worked. The screen was distorted, but there was at least a picture, so we knew there was hope. We had to move the game cartridge around quite a bit, but eventually, we got it to display correctly. After doing some research, we found out that it's a common problem for the 72-pin connector to go bad, so my mom ordered a replacement. The new connector arrived, we installed it, and now the NES works like a charm! I can't wait to get some more games for it. It's been a blast so far playing Super Mario Bros. Thanks for reading :)",
         image: nesImg,
         imageAlt: "Picture of NES working with a monitor"
     }
