@@ -1,5 +1,7 @@
 import { blogs } from "./blogs.js";
 
+const svgArrow = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64"><path stroke="none" fill="#02577a" d="M23.339745962156 9.5240473580836a10 10 0 0 1 17.320508075689 0l20.179491924311 34.951905283833a10 10 0 0 1 -8.6602540378444 15l-40.358983848622 0a10 10 0 0 1 -8.6602540378444 -15"></path></svg>`;
+
 const POSTS_PER_PAGE = 5;
 let currentPage = 0;
 let sortedEntries = []
@@ -34,22 +36,22 @@ function renderPagination(page) {
     const totalPages = Math.ceil(sortedEntries.length / POSTS_PER_PAGE);
 
     const prevBtn = document.createElement("button");
-    prevBtn.textContent = "<";
-    prevBtn.classList.add("pagination-arrow");
+    prevBtn.classList.add("pagination-arrow-btn", "pagination-arrow-btn--prev");
     prevBtn.disabled = page === 0;
+    prevBtn.innerHTML = svgArrow;
     prevBtn.addEventListener("click", () => {
         currentPage--;
         renderPage(currentPage);
     });
 
     const pageLabel = document.createElement("span");
-    pageLabel.classList.add("pagination-arrow", "text");
+    pageLabel.classList.add("text");
     pageLabel.textContent = `${page + 1} / ${totalPages}`;
 
     const nextBtn = document.createElement("button");
-    nextBtn.textContent = ">";
-    nextBtn.classList.add("pagination-arrow");
+    nextBtn.classList.add("pagination-arrow-btn", "pagination-arrow-btn--next");
     nextBtn.disabled = page >= totalPages - 1;
+    nextBtn.innerHTML = svgArrow;
     nextBtn.addEventListener("click", () => {
         currentPage++;
         renderPage(currentPage);

@@ -100,6 +100,25 @@ body {
     margin-top: 1em;
 }
 
+.pagination-arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-arrow-btn--prev svg {
+    transform: rotate(-90deg);
+}
+
+.pagination-arrow-btn--next svg {
+    transform: rotate(90deg);
+}
+
+.pagination-arrow-btn:disabled {
+    cursor: default;
+    opacity: 0.35;
+}
+
 /* FIX TEXT ON BIG SCREENS!!!! */
 .text {
     font-size: 1.1rem;
